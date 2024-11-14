@@ -1,0 +1,119 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "HIDEN HUB",
+   LoadingTitle = "Loading Hiden hub UI",
+   LoadingSubtitle = "by Simple",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = HIDEN, -- Create a custom folder for your hub/game
+      FileName = "Hiden Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "a",
+      RememberJoins = false
+   }
+})
+
+— TAB
+local CREDIT = Window:CreateTab("Credit", 4483362458)
+
+
+— CREDIT
+
+local Label = CREDIT:CreateLabel("Credit : HIDEN HUB")
+local Label = CREDIT:CreateLabel("Script Made by : HIDEN HUB")
+local Label = CREDIT:CreateLabel("Discord Server : https://discord.gg/T7UczcZsRS")
+
+local Button = CREDIT:CreateButton({
+   Name = "Copy Discord Server",
+   Callback = function()
+   local link = "https://discord.gg/T7UczcZsRS"
+    
+    setclipboard(link)
+    
+    game.StarterGui:SetCore("SendNotification", {Title = "Discord Links";
+       Text = "Link copied to clipboard!!";
+       Duration = 5;
+    })
+   end,
+})
+
+local Button = CREDIT:CreateButton({
+   Name = "Copy Youtube",
+   Callback = function()
+   local link = "https://youtube.com/@HIDENBUX"
+    
+    setclipboard(link)
+    
+    game.StarterGui:SetCore("SendNotification", {Title = "Youtube Links";
+       Text = "Link copied to clipboard!!";
+       Duration = 5;
+    })
+   end,
+})
+
+local Button = CREDIT:CreateButton({
+   Name = "Destroy Ui",
+   Callback = function()
+  Rayfield:Destroy()
+   end,
+})
+
+
+
+— ของต่างๆที่ใช้
+-- TAB
+local MENU = Window:CreateTab("MENU", 4483362458)
+
+-- Label
+
+local Label = Window:CreateLabel("Label Example")
+
+-- SECTION
+local Section = Window:CreateSection("Main")
+
+
+-- BUTTON
+
+local Button = Window:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+print(“HIDENHUB”)
+   end,
+})
+
+-- TOGGLE
+
+local Toggle = Window:CreateToggle({
+   Name = "Toggle Example",
+   CurrentValue = false,
+   Callback = function(Value)
+print(“HIDENHUB”)
+   end,
+})
+
+-- SLIDER
+
+local Slider = Window:CreateSlider({
+   Name = "Slider Example",
+   Range = {0, 100},
+   Increment = 10,
+   Suffix = "Bananas",
+   CurrentValue = 10,
+   Callback = function(Value)
+print(“HIDENHUB”)
+   end,
+})
+
+-- DROPDOWN
+
+local Dropdown = MENU:CreateDropdown({
+   Name = "Dropdown Example",
+   Options = {"Option 1","Option 2"},
+   CurrentOption = {"Option 1"},
+   MultipleOptions = false,
+   Callback = function(Option)
+ print(“HIDENHUB”)
+   end,
+})
