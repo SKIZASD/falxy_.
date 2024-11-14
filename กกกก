@@ -6,39 +6,38 @@ local Window = Rayfield:CreateWindow({
    ConfigurationSaving = {
       Enabled = true,
       FolderName = HIDEN,
-      FileName = "Hiden Hub"
+      FileName = "Big Hub"
    },
    Discord = {
       Enabled = false,
-      Invite = "T7UczcZsRS",
+      Invite = "T7UczcZsRS", 
       RememberJoins = false
    },
    KeySystem = false,
    KeySettings = {
-      Title = "H",
+      Title = "HIDEN HUB",
       Subtitle = "Key System",
-      Note = "H",
+      Note = "NOKEY",
       FileName = "Key",
       SaveKey = true,
       GrabKeyFromSite = false,
-      Key = {"H"}
+      Key = {"NOKEY"}
    }
 })
 
 -- TAB
 local CREDIT = Window:CreateTab("Credit", 4483362458)
-local Window = Window:CreateTab("MENU", 4483362458)
+local MENU = Window:CreateTab("MENU", 4483362458)
 
-— CREDIT TAB
-
-local Label = CREDIT:CreateLabel("Credit : Simple")
-local Label = CREDIT:CreateLabel("Script Made by : Simple")
-local Label = CREDIT:CreateLabel("Discord Server : https://discord.gg/T7UczcZsRS")
+-- CREDIT TAB
+local Label = CREDIT:CreateLabel("Credit : HIDEN HUB")
+local Label = CREDIT:CreateLabel("Script Made by : HIDEN HUB")
+local Label = CREDIT:CreateLabel("Discord Server : https://discord.gg/hidenhub")
 
 local Button = CREDIT:CreateButton({
    Name = "Copy Discord Server",
    Callback = function()
-   local link = "https://discord.gg/T7UczcZsRS"
+   local link = "https://discord.gg/hidenhub"
     
     setclipboard(link)
     
@@ -52,7 +51,7 @@ local Button = CREDIT:CreateButton({
 local Button = CREDIT:CreateButton({
    Name = "Copy Youtube",
    Callback = function()
-   local link = "https://youtube.com/@HIDENBUX"
+   local link = "https://youtube.com/@HIDENHUB"
     
     setclipboard(link)
     
@@ -72,52 +71,55 @@ local Button = CREDIT:CreateButton({
 
 -- Label
 
-local Label = Window:CreateLabel("Label Example")
+local Label = MENU:CreateLabel("Label Example")
 
 -- SECTION
-local Section = Window:CreateSection("Main")
+local Section = MENU:CreateSection("Main")
 
 
 -- BUTTON
 
-local Button = Window:CreateButton({
+local Button = MENU:CreateButton({
    Name = "Button Example",
    Callback = function()
-  print(“H”)
+   -- The function that takes place when the button is pressed
    end,
 })
 
 -- TOGGLE
 
-local Toggle = Window:CreateToggle({
+local Toggle = MENU:CreateToggle({
    Name = "Toggle Example",
    CurrentValue = false,
    Callback = function(Value)
- print(“H”)
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
    end,
 })
 
 -- SLIDER
 
-local Slider = Window:CreateSlider({
+local Slider = MENU:CreateSlider({
    Name = "Slider Example",
    Range = {0, 100},
    Increment = 10,
    Suffix = "Bananas",
    CurrentValue = 10,
    Callback = function(Value)
-print(“H”)
+   -- The function that takes place when the slider changes
+   -- The variable (Value) is a number which correlates to the value the slider is currently at
    end,
 })
 
 -- DROPDOWN
 
-local Dropdown = Window:CreateDropdown({
+local Dropdown = MENU:CreateDropdown({
    Name = "Dropdown Example",
    Options = {"Option 1","Option 2"},
    CurrentOption = {"Option 1"},
    MultipleOptions = false,
    Callback = function(Option)
-print(“H”)
+   -- The function that takes place when the selected option is changed
+   -- The variable (Option) is a table of strings for the current selected options
    end,
 })
