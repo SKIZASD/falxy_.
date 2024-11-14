@@ -5,24 +5,34 @@ local Window = Rayfield:CreateWindow({
    LoadingSubtitle = "by Simple",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = HIDEN, -- Create a custom folder for your hub/game
+      FolderName = HIDEN,
       FileName = "Hiden Hub"
    },
    Discord = {
       Enabled = false,
-      Invite = "a",
+      Invite = "T7UczcZsRS",
       RememberJoins = false
+   },
+   KeySystem = false,
+   KeySettings = {
+      Title = "H",
+      Subtitle = "Key System",
+      Note = "H",
+      FileName = "Key",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = {"H"}
    }
 })
 
-— TAB
+-- TAB
 local CREDIT = Window:CreateTab("Credit", 4483362458)
+local Window = Window:CreateTab("MENU", 4483362458)
 
+— CREDIT TAB
 
-— CREDIT
-
-local Label = CREDIT:CreateLabel("Credit : HIDEN HUB")
-local Label = CREDIT:CreateLabel("Script Made by : HIDEN HUB")
+local Label = CREDIT:CreateLabel("Credit : Simple")
+local Label = CREDIT:CreateLabel("Script Made by : Simple")
 local Label = CREDIT:CreateLabel("Discord Server : https://discord.gg/T7UczcZsRS")
 
 local Button = CREDIT:CreateButton({
@@ -60,12 +70,6 @@ local Button = CREDIT:CreateButton({
    end,
 })
 
-
-
-— ของต่างๆที่ใช้
--- TAB
-local MENU = Window:CreateTab("MENU", 4483362458)
-
 -- Label
 
 local Label = Window:CreateLabel("Label Example")
@@ -79,7 +83,7 @@ local Section = Window:CreateSection("Main")
 local Button = Window:CreateButton({
    Name = "Button Example",
    Callback = function()
-print(“HIDENHUB”)
+  print(“H”)
    end,
 })
 
@@ -89,7 +93,7 @@ local Toggle = Window:CreateToggle({
    Name = "Toggle Example",
    CurrentValue = false,
    Callback = function(Value)
-print(“HIDENHUB”)
+ print(“H”)
    end,
 })
 
@@ -102,18 +106,18 @@ local Slider = Window:CreateSlider({
    Suffix = "Bananas",
    CurrentValue = 10,
    Callback = function(Value)
-print(“HIDENHUB”)
+print(“H”)
    end,
 })
 
 -- DROPDOWN
 
-local Dropdown = MENU:CreateDropdown({
+local Dropdown = Window:CreateDropdown({
    Name = "Dropdown Example",
    Options = {"Option 1","Option 2"},
    CurrentOption = {"Option 1"},
    MultipleOptions = false,
    Callback = function(Option)
- print(“HIDENHUB”)
+print(“H”)
    end,
 })
