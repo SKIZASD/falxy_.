@@ -6221,7 +6221,7 @@ local ClosureBindings = {
 	end,
 	[54] = function()local maui,script,require,getfenv,setfenv=ImportGlobals(54)return {
 		Name = "Normal Theme",
-		Accent = Color3.fromRGB(152, 251, 152),
+		Accent = Color3.fromRGB(255, 34, 97),
 
 		AcrylicMain = Color3.fromRGB(20, 20, 20),
 		AcrylicBorder = Color3.fromRGB(13, 13, 13),
@@ -6229,7 +6229,7 @@ local ClosureBindings = {
 		AcrylicNoise = 0.98,
 
 		TitleBarLine = Color3.fromRGB(13, 13, 13),
-		Tab = Color3.fromRG(152, 251, 152),
+		Tab = Color3.fromRGB(255, 34, 97),
 
 		Element = Color3.fromRGB(62,62,62),
 		ElementBorder = Color3.fromRGB(18,18,18),
